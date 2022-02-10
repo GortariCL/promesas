@@ -13,8 +13,8 @@ const getDiscos = async () => {
 // 4. Utilizar un método de iteración de arreglos (por ejemplo: forEach) para mostrar
 // solamente los primeros 20 títulos de los datos recibidos.        
         disco.length = 20;
-        disco.forEach((value, indice) => {
-            console.log(`Titulo de album ${indice + 1}: ${value.title}`);
+        disco.forEach((id, indice) => {
+            console.log(`Titulo de album ${indice + 1}: ${id.title}`);
         });
     }catch(err){
         console.log(err);
