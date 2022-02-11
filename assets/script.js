@@ -35,10 +35,8 @@ const mostrarDiscos = () => {
 // 6. Crear una función asíncrona que permita recibir el mensaje de la promesa creada en
 // el requerimiento cinco (5), de forma directa con await, para ser mostrado en la
 // consola del navegador, agregando el llamado a las dos funciones principales.
-const getDiscosTitle = async () => {
+const getDiscosTitle = (async () => {
     const resp = await mostrarDiscos();
     getDiscos();
     console.log(resp);
-};
-
-getDiscosTitle();
+})();
